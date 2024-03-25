@@ -1,0 +1,250 @@
+@font-face {
+  font-display: swap;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/epilogue-v17-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/epilogue-v17-latin-700.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #fafafa;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* HEADER START */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 32.07px;
+}
+.site-logo {
+  margin-right: 62.24px;
+}
+.sitenav__list {
+  display: flex;
+  gap: 40px;
+  margin-right: 653px;
+}
+.sitenav__item {
+  &:hover .sitenav__list_inner {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.sitenav__item:hover .sitenav__list_inner2nd {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sitenav__link {
+  font-size: 14px;
+  color: #686868;
+  line-height: 16px;
+  margin-bottom: 20px;
+
+  &:active {
+    color: #151515;
+  }
+}
+.sitenav__link_btn {
+  border: 1.5px solid #686868;
+}
+.sitenav__list_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  padding: 24px;
+  width: 153px;
+  border-radius: 12px;
+  transition: 0.3;
+  left: 370px;
+  visibility: hidden;
+  opacity: 0;
+}
+.sitenav__link_item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.sitenav__item_inner {
+  display: flex;
+  gap: 15px;
+}
+.sitenav__link_inner {
+  width: 100%;
+  color: #686868;
+  font-size: 14px;
+  line-height: 16px;
+}
+.sitenav__list_inner2nd {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  padding: 24px;
+  width: 116px;
+  border-radius: 12px;
+  transition: 0.3;
+  visibility: hidden;
+  opacity: 1;
+}
+.sitenav__link_inner2nd {
+  font-size: 14px;
+  color: #686868;
+  line-height: 16px;
+}
+.login {
+  display: flex;
+  align-items: center;
+}
+.login__btn {
+  margin-right: 40px;
+  font-size: 14px;
+  color: #686868;
+  line-height: 16px;
+  color: #151515;
+}
+
+.login__sign {
+  font-size: 14px;
+  color: #686868;
+  line-height: 16px;
+  border: 1.5px solid #686868;
+  border-radius: 15px;
+  padding: 13px 22px;
+
+  &:active {
+    border-color: #151515;
+    color: #151515;
+  }
+}
+/* HEADER END */
+
+/* HERO START */
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero__info {
+  margin-top: 175.35px;
+}
+.hero__info_only {
+  margin-bottom: 108px;
+}
+.hero__info_title {
+  width: 540px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -1.11px;
+  margin-bottom: 48px;
+  color: #151515;
+}
+.hero__info_description {
+  width: 445px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #686868;
+  margin-bottom: 51px;
+}
+.hero__info__btn {
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-right: 28px;
+  padding-left: 31px;
+  background-color: #151515;
+  border-radius: 12px;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  text-align: center;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: #151515;
+    background-color: #fff;
+    color: #151515;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+.hero__info_list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero__img {
+  margin-top: 67px;
+}
+
+/* HERO END */
